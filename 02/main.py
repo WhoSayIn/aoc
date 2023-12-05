@@ -1,4 +1,4 @@
-from functools import reduce
+from math import prod
 
 
 class Solution:
@@ -68,7 +68,7 @@ class Solution:
                 if amount > state[color]:
                     state[color] = amount
 
-        return reduce(lambda x, y: x * y, state.values())
+        return prod(state.values())
 
 
 if __name__ == "__main__":
