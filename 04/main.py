@@ -7,9 +7,7 @@ class Solution:
         multipliers = [1] * len(self.cards)
 
         for index, card in enumerate(self.cards):
-            splitted_card = card.strip().split(":")
-
-            numbers = splitted_card[1].split("|")
+            numbers = card.strip().split(":")[1].split("|")
             winning_numbers = set([number.strip() for number in numbers[0].split()])
             cards_numbers = set([number.strip() for number in numbers[1].split()])
             matching_numbers = cards_numbers.intersection(winning_numbers)
