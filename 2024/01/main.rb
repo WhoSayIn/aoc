@@ -34,8 +34,6 @@ class Solution
   end
 end
 
-if __FILE__ == $PROGRAM_NAME
-  solution = Solution.new('2024/01/input.txt')
-  puts solution.part1
-  puts solution.part2
-end
+solution = Solution.new('2024/01/input.txt')
+puts solution.part1
+puts solution.part2
